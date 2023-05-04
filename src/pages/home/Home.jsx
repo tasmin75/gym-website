@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import styles from "./Home.module.css";
 import { NavLink } from "react-router-dom";
+import {AboutUs} from "../aboutus/AboutUs"
+import {Program} from "../program/Program"
+import {Training} from "../training/Training"
+import {Pricing} from "../pricing/Pricing"
 
 export function Home() {
   const imgArr = [
@@ -35,6 +39,7 @@ export function Home() {
   }, [index, imgArr.length]);
 
   return (
+    <>
     <div className={styles.imgSlider}>
       <img className={styles.img} src={imgArr[index].url} alt="gym" />
       <div className={styles.imgText}>
@@ -44,5 +49,10 @@ export function Home() {
         {/* </div> */}
       </div>
     </div>
+    <AboutUs/>
+    <Program/>
+    <Training/>
+    <Pricing/>
+    </>
   );
 }

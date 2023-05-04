@@ -3,6 +3,7 @@ import style from "./Footer.module.css";
 import { ImFacebook2, ImYoutube } from "react-icons/im";
 import { BsLinkedin } from "react-icons/bs";
 import { ImWhatsapp } from "react-icons/im";
+import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
@@ -16,10 +17,10 @@ export function Footer() {
         </p>
 
         <div className={style.iconDiv}>
-          <ImFacebook2 className={style.icons} />
-          <BsLinkedin className={style.icons} />
-          <ImWhatsapp className={style.icons} />
-          <ImYoutube className={style.icons} />
+          <Link to="https://www.facebook.com/" target="blank"><ImFacebook2 className={style.icons} /></Link>
+          <Link to="https://www.linkedin.com/" target="blank"><BsLinkedin className={style.icons} /></Link>
+          <Link to="https://www.whatsapp.com/" target="blank"> <ImWhatsapp className={style.icons} /></Link>
+          <Link to="https://www.youtube.com/" target="blank"><ImYoutube className={style.icons} /></Link>
         </div>
       </div>
 
