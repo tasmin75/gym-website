@@ -1,9 +1,9 @@
 import React from "react";
 import style from "./Footer.module.css";
 import { ImFacebook2, ImYoutube } from "react-icons/im";
-import { BsLinkedin } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
 import { ImWhatsapp } from "react-icons/im";
-import { Link } from "react-router-dom";
+import {Link} from 'react-router-dom'
 
 export function Footer() {
   return (
@@ -17,10 +17,10 @@ export function Footer() {
         </p>
 
         <div className={style.iconDiv}>
-          <Link to="https://www.facebook.com/" target="blank"><ImFacebook2 className={style.icons} /></Link>
-          <Link to="https://www.linkedin.com/" target="blank"><BsLinkedin className={style.icons} /></Link>
-          <Link to="https://www.whatsapp.com/" target="blank"> <ImWhatsapp className={style.icons} /></Link>
-          <Link to="https://www.youtube.com/" target="blank"><ImYoutube className={style.icons} /></Link>
+          <Link to='https://www.facebook.com/'  target="blank"><ImFacebook2 className={style.icons} /></Link>
+          <Link to='https://www.instagram.com/' target="blank"><BsInstagram className={style.icons} /></Link>
+          <Link to='https://web.whatsapp.com/' target="blank"><ImWhatsapp className={style.icons} /></Link>
+          <Link to='https://www.youtube.com/' target="blank"><ImYoutube className={style.icons} /></Link>
         </div>
       </div>
 

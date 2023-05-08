@@ -115,7 +115,6 @@ const [gymData, setGymData]=useState([])
         </Form.Group>
 
         <Button 
-            // variant="primary"
             type="submit"
             onClick={handleSubmitData}
             >

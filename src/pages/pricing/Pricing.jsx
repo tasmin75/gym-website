@@ -3,7 +3,6 @@ import styles from "./Pricing.module.css";
 import { Link } from "react-router-dom";
 
 export function Pricing() {
-  const registerPageUrl = "/register";
 
   const memberships = [
     {
@@ -62,7 +61,7 @@ export function Pricing() {
             {membership.features.map((feature, index) => (
               <div key={index}>{feature}</div>
             ))}
-            <Link to={registerPageUrl} className={styles.button}>
+            <Link to="/login" className={styles.button}>
               Buy Plan
             </Link>
           </div>

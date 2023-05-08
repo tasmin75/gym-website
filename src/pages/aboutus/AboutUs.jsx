@@ -10,7 +10,7 @@ export function AboutUs() {
             src="https://www.youtube.com/embed/vei81-bZhG4"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen="true"
+            allowFullScreen= {true}
           ></iframe>
         </div>
 
@@ -62,7 +62,7 @@ export function AboutUs() {
             src="https://www.youtube.com/embed/Rd3XHPk5me4"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen="true"
+            allowFullScreen={true}
           ></iframe>
         </div>
       </div>

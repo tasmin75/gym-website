@@ -7,36 +7,38 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 4rem;
-  position:sticky;
+  padding: 1rem 3rem;
+  position: sticky;
   top: 0;
-  width: 100vw;
+
   background-color: black;
-  color:#fff;
-  box-shadow:1px 1px 10px black;
+  color: #fff;
+  box-shadow: 1px 1px 10px black;
   z-index: 999;
+}
+.container>a{
+  text-decoration: none;
 }
 
 .navlist {
   display: flex;
   gap: 1.2rem;
   align-items: center;
-  
 }
 
-.item{
+.item {
   font-size: 20px;
   text-decoration: none;
-  
 }
 
-.item:hover{
-    color:red;
-    cursor: pointer;
+.item:hover {
+  color: red;
+  cursor: pointer;
+  border-bottom: blue;
 }
 
-img{
-    width: 70px;
+img {
+  width: 70px;
 }
 
 a {
@@ -44,14 +46,16 @@ a {
 }
 
 .joinbtn {
-  background-color:maroon;
+  background-color: maroon;
   border-radius: 0.5rem;
   padding: 0.6rem 1rem;
-  color:#fff;
+  color: #fff;
   text-decoration: none;
+  font-weight: 600;
 }
-.joinbtn:hover{
-  color:white;
+.joinbtn:hover {
+  color: blue;
+  background-color: #fff;
 }
 
 .closebtn {
@@ -59,19 +63,19 @@ a {
 }
 
 .mobileView {
- display: flex;
- flex-direction: column;
- align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.mobileView .item{
-    display: block;
-    padding:.5rem 1rem
+.mobileView .item {
+  display: block;
+  padding: 0.5rem 1rem;
 }
-.mobileView .joinbtn{
-    display: block;
+.mobileView .joinbtn {
+  display: block;
 }
 
-.logo{
+.logo {
   display: flex;
   align-items: center;
 }
@@ -80,19 +84,18 @@ a {
   .item {
     display: none;
   }
-  .joinbtn{
-    display:none;
+  .joinbtn {
+    display: none;
   }
 
   .closebtn {
     display: block;
     background-color: red;
-    position: fixed ;
+    position: fixed;
     top: 20px;
-    padding:0.3rem;
-    right:30px;
+    padding: 0.3rem;
+    right: 30px;
     border: none;
     color: white;
   }
 }
-

@@ -14,14 +14,14 @@
 
 .scrollerCard{
    display: flex;
-   max-width: 700px;
+   max-width: 920px;
    overflow-x: scroll;
    scroll-behavior: smooth;
 }
-/* 
+
 .scrollerCard::-webkit-scrollbar{
     display: none;
-} */
+}
 
 .card img{
    width: 100%;
@@ -41,6 +41,12 @@
     background-color:peachpuff;
     padding: 0.5rem;
     box-shadow:rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.btn{
+    display: flex;
+    gap:1rem;
+    font-size:1.5rem;
 }
 
 @media screen and (max-width: 768px){

@@ -1,25 +1,34 @@
 .scrollDiv {
   display: flex;
   flex-direction: column;
-  width: 99vw;
   background-color: black;
 }
-
+.himg{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
 .scrollDiv::-webkit-scrollbar {
+  width: 0;
   display: none;
 }
-
+.name{
+  font-size:1.3rem ;
+  font-weight: 600;
+}
 .profiles {
-  margin: 1rem;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   background-color: black;
-  margin: auto;
   /* padding: 1rem 7rem 1rem 7rem; */
-  padding-left: 5rem;
+  
 }
-
+.imagecontainer>img{
+  border-radius: 8px;
+  box-shadow: 0 0 5px white;
+}
 .trainerDiv {
   display: flex;
   align-items: center;
@@ -66,18 +75,31 @@
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-  align-items: center;
-  justify-content: center;
-  width: 18rem;
-  margin: 0.2rem;
+  position: relative;
+  display: inline-block;
+  margin: .25rem;
 }
 
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.row{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  height: 50%;
+}
+.card>img{
+  height: 12rem;
+}
 .imgTrainer {
-  width: 17.3rem;
-  height: 17.1rem;
+  width: 20vw;
+  height: 100%;
+}
+.imgTrainer:hover .layer {
+  display: flex;
 }
 
 h4 {
@@ -94,11 +116,66 @@ h4 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 0.4rem;
 }
+.imagecontainer {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+}
+.card>img{
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgb(203, 201, 201);
 
-@media screen and (max-width:390px) {
+}
 
-  .profiles{
-    padding-left:3rem;
+.textoverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.imagecontainer:hover .textoverlay {
+  display: flex;
+}
+
+
+@media screen and (max-width: 430px) {
+  .himg{
+    display: block;
+    
   }
-  
+  .textoverlay{
+    font-size: 1rem;
+  }
+  .imagecontainer>img{
+    height: 6rem;
+    width: 100%;
+  }
+  .card>img{
+    height: 6rem;
+    width: 5rem;
+  }
+  .name{
+    color: #fff;
+    font-size: .6rem;
+  }
+  .coach{
+    font-size: .4rem;
+  }
+  .profiles{
+    margin-top: 1rem;
+    
+  }
+}
+@media screen and (max-width: 390px) {
+  .imgTrainer {
+    width: 50vw;
+  }
 }
