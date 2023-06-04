@@ -9,7 +9,7 @@ import { Pricing } from "./pages/pricing/Pricing";
 import { Footer } from "./components/footer/Footer";
 import { Login } from "./pages/login/Login";
 import { Register } from "./pages/register/Register";
-import Protected from "./components/protected/Protected";
+import Protected from "./components/Protected/Protected";
 
 export default function App() {
   return (
