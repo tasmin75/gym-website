@@ -1,22 +1,22 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Navbar } from "./Components/Navbar/Navbar";
-import { Home } from "./Pages/Home/Home";
-import { AboutUs } from "./Pages/Aboutus/AboutUs";
-import { Program } from "./Pages/Program/Program";
-import { Training } from "./Pages/Training/Training";
-import { Pricing } from "./Pages/Pricing/Pricing";
-import { Footer } from "./Components/Footer/Footer";
-import { Login } from "./Pages/Login/Login";
-import { Register } from "./Pages/Register/Register";
-import Protected from "./Components/Protected/Protected";
+import { Navbar } from "./components/navbar/Navbar";
+import { Home } from "./pages/home/Home";
+import { AboutUs } from "./pages/aboutus/AboutUs";
+import { Program } from "./pages/program/Program";
+import { Training } from "./pages/training/Training";
+import { Pricing } from "./pages/pricing/Pricing";
+import { Footer } from "./components/footer/Footer";
+import { Login } from "./pages/login/Login";
+import { Register } from "./pages/register/Register";
+import Protected from "./components/protected/Protected";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={< Protected Cmp={Home }/>} />
+        <Route path="/" element={< Protected Cmp={Home}/>} />
         <Route path="/aboutus" element={< Protected Cmp={AboutUs} />} />
         <Route path="/program" element={< Protected Cmp={Program }/>} />
         <Route path="/training" element={< Protected Cmp={Training} />} />
